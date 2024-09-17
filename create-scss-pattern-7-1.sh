@@ -10,7 +10,7 @@ script_dir="$(dirname "$(realpath "$BASH_SOURCE")")"
 # Массивы директорий и файлов для шаблона 7-1 
 directories=("abstracts" "base" "components" "layout" "pages" "themes" "vendors")
 files=(
-    "_variables.scss _functions.scss _mixins.scss"  # _partial для директории abstracts 
+    "_variables.scss _functions.scss _mixins.scss"  # _partial для директории abstracts (можно перечислять новые части)
     "_reset.scss _typography.scss"                  # _partial для директории base
     ""                                              # _partial для директории components
     ""                                              # _partial для директории layout
@@ -22,8 +22,10 @@ files=(
 # Создаем основную директорию
 mkdir -p "$parent_dir"
 
-# Создаем файл для импорта SCSS
-touch "$connection_file"
+# Создаем файл для импорта SCSS и добавляем информацию о шаблоне, если файл пустой
+if [ ! -s "$connection_file" ]; then
+    printf "//This 7-1 template was generated,\n//Details at https://github.com/Petrakoow/scss-template-7-1\n\n" > "$connection_file"
+fi
 
 for i in "${!directories[@]}"; do
     dir="${directories[$i]}"
