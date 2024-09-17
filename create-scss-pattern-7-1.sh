@@ -7,16 +7,16 @@ connection_file="$parent_dir/main.scss"
 
 script_dir="$(dirname "$(realpath "$BASH_SOURCE")")"
 
-# Массивы директорий и файлов для шаблона
+# Массивы директорий и файлов для шаблона 7-1 
 directories=("abstracts" "base" "components" "layout" "pages" "themes" "vendors")
 files=(
-    "_variables.scss _functions.scss _mixins.scss"  # Файлы для директории abstracts
-    "_reset.scss _typography.scss"                 # Файлы для директории base
-    ""                                              # Файлы для директории components (пока пусто)
-    ""                                              # Файлы для директории layout (пока пусто)
-    ""                                              # Файлы для директории pages (пока пусто)
-    ""                                              # Файлы для директории themes (пока пусто)
-    ""                                              # Файлы для директории vendors (пока пусто)
+    "_variables.scss _functions.scss _mixins.scss"  # _partial для директории abstracts 
+    "_reset.scss _typography.scss"                  # _partial для директории base
+    ""                                              # _partial для директории components
+    ""                                              # _partial для директории layout
+    ""                                              # _partial для директории pages 
+    ""                                              # _partial для директории themes 
+    ""                                              # _partial для директории vendors 
 )
 
 # Создаем основную директорию
