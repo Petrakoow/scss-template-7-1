@@ -61,6 +61,9 @@
 
 ## Скриншоты
 
-- **Монтирование:** ![Скриншот монтирования](path/to/mounting-screenshot.png)
-- **Запуск в проекте:** ![Скриншот запуска](path/to/running-screenshot.png)
-- **Структура файлов:** ![Скриншот структуры файлов](path/to/file-structure-screenshot.png)
+- **Монтирование:**\
+  ![Скриншот монтирования](images/mounting.png)
+- **Пример запуска, отображения и файл сброса стилей:**\
+  ![Скриншот запуска](images/result-work-script.png)
+- **Отображение imports в main:**\
+  ![Скриншот структуры файлов](images/result-work-script-import.png)
