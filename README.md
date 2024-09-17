@@ -45,7 +45,8 @@
      ├── layout/
      ├── pages/
      ├── themes/
-     └── vendors/
+     ├── vendors/
+     └── main.scss
      ```
 
    - Файл `main.scss` будет включать необходимые импорты:
